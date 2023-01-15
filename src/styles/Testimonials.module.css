@@ -1,0 +1,79 @@
+.main {
+    display: flex;
+    max-width: 130rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    gap: 3rem;
+}
+
+.main > div > div {
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main > div > div > div > img {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.main > div > div > div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main > div > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.no_name {
+    text-align: center;
+}
+
+@media (max-width: 80em) {
+    .main {
+        max-width: 84rem;
+    }
+    .col3 {
+        position: absolute;
+    }
+}
+
+@media (max-width: 57em) {
+    .col1,
+    .col2 {
+        width: 36rem;
+    }
+
+    .main {
+        max-width: 75rem;
+    }
+}
+
+@media (max-width: 43em) {
+    .main{
+        max-width: 60rem;
+    }
+    .col1{
+        width: 60rem;
+    }
+    .col2 {
+        position: absolute;
+    }
+}

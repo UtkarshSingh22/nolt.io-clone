@@ -1,0 +1,28 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: 24rem auto 10rem auto;
+    text-align: center;
+    gap: 5rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.heading{
+    font-size: 3.6rem;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+}
+
+.content{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+
+@media (max-width: 43em) {
+    .main {
+        max-width: 62rem;
+    }
+}
