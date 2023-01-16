@@ -70,6 +70,7 @@
     .main{
         max-width: 60rem;
         flex-direction: column;
+        gap: 3rem;
     }
     .col1, .col2{
         width: 60rem;
