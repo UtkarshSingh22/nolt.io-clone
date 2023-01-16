@@ -7,7 +7,6 @@ import TrialPopup from "./components/TrialPopup";
 import Usage from "./components/Usage";
 import { useRef, useEffect, useState } from "react";
 import Media3Cols from "./utils/Media3Cols";
-import Media2Cols from "./utils/Media2Cols";
 
 function App() {
     const col1Ref = useRef(null);
@@ -40,7 +39,6 @@ function App() {
                     col3Ref={col3Ref}
                 />
             )}
-            {rendered && <Media2Cols col1Ref={col1Ref} col2Ref={col2Ref} />}
         </div>
     );
 }

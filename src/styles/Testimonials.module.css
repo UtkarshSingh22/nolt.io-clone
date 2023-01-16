@@ -69,11 +69,9 @@
 @media (max-width: 43em) {
     .main{
         max-width: 60rem;
+        flex-direction: column;
     }
-    .col1{
+    .col1, .col2{
         width: 60rem;
-    }
-    .col2 {
-        position: absolute;
     }
 }
