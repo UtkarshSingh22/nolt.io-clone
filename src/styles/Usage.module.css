@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: column;
     max-width: 75rem;
-    margin: 24rem auto 10rem auto;
+    margin: 24rem auto 6rem auto;
     text-align: center;
     gap: 5rem;
     background-color: var(--background-color);
     color: var(--text-color);
+    padding: 0 2rem;
 }
 
 .heading{
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     letter-spacing: -0.2px;
     font-weight: 500;
 }
@@ -24,5 +25,18 @@
 @media (max-width: 43em) {
     .main {
         max-width: 62rem;
+    }
+}
+
+@media (max-width: 43em) {
+    .main {
+        max-width: 62rem;
+        margin: 14rem auto 6rem auto;
+    }
+    .heading {
+        font-size: 2.4rem;
+    }
+    .content {
+        font-size: 1.4rem;
     }
 }

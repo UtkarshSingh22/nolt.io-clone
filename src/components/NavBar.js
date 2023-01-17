@@ -2,14 +2,18 @@ import styles from "../styles/NavBar.module.css";
 import ToggleSwitch from "../utils/ToggleSwitch";
 import { useState } from "react";
 
+//function for changing css variables
 const changeProperty = (name, value) => {
     document.documentElement.style.setProperty(name, value);
 };
 
 const NavBar = () => {
+    //state for maintaining light/dark mode
     const [lightMode, setLightMode] = useState(true);
+    //state for whether nav is open/closed for mobile view
     const [navOpen, setNavOpen] = useState(false);
 
+    //function for handling change in mode
     const toggleMode = () => {
         if (!lightMode) {
             changeProperty("--background-color", "#fff");
@@ -32,9 +36,10 @@ const NavBar = () => {
         });
     };
 
+    //function for handling toggle menu
     const toggleMenu = () => {
-        setNavOpen((prevState) => !prevState)
-    }
+        setNavOpen((prevState) => !prevState);
+    };
 
     return (
         <nav className={styles.nav}>
@@ -51,7 +56,7 @@ const NavBar = () => {
                 <div>Help</div>
                 <div>Sign in</div>
                 <div className={styles.btn}>Create a Nolt board</div>
-                <ToggleSwitch toggleMode={toggleMode} />
+                <ToggleSwitch toggleMode={toggleMode} lightMode={lightMode} />
             </div>
             {navOpen && (
                 <div className={styles.mobNav}>
@@ -61,10 +66,15 @@ const NavBar = () => {
                     <div>Features</div>
                     <div>Pricing</div>
                     <div>Help</div>
-                    <ToggleSwitch toggleMode={toggleMode} />
+                    <ToggleSwitch
+                        toggleMode={toggleMode}
+                        lightMode={lightMode}
+                    />
                 </div>
             )}
-            <div className={styles.menu} onClick={toggleMenu}>Menu</div>
+            <div className={styles.menu} onClick={toggleMenu}>
+                Menu
+            </div>
         </nav>
     );
 };

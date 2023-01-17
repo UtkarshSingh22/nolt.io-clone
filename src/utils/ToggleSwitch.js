@@ -1,10 +1,11 @@
-const ToggleSwitch = ({ toggleMode }) => {
+const ToggleSwitch = ({ toggleMode, lightMode }) => {
     return (
         <label className="toggle">
             <input
                 className="toggle-checkbox"
                 type="checkbox"
-                onClick={toggleMode}
+                onChange={toggleMode}
+                checked={!lightMode}
             />
             <div className="toggle-switch"></div>
         </label>

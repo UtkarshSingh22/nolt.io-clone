@@ -1,8 +1,9 @@
 .main {
     display: flex;
-    max-width: 130rem;
+    max-width: 95%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .col1,
@@ -48,31 +49,25 @@
 
 @media (max-width: 80em) {
     .main {
-        max-width: 84rem;
+        min-width: 60%;
     }
     .col3 {
-        position: absolute;
+        display: none;
     }
 }
 
 @media (max-width: 57em) {
     .col1,
     .col2 {
-        width: 36rem;
-    }
-
-    .main {
-        max-width: 75rem;
+        width: 48%;
     }
 }
 
 @media (max-width: 43em) {
     .main{
-        max-width: 60rem;
         flex-direction: column;
-        gap: 3rem;
     }
     .col1, .col2{
-        width: 60rem;
+        width: 100%;
     }
 }

@@ -4,7 +4,12 @@ import { Fragment } from "react";
 const Footer = () => {
     return (
         <Fragment>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 250"
+                className={styles.wave}
+                preserveAspectRatio="none"
+            >
                 <path
                     fill="#fec3c1"
                     fillOpacity="1"

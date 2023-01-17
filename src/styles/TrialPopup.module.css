@@ -1,7 +1,7 @@
 .main {
-    max-width: 70rem;
-    margin: 8rem auto 0rem auto;
-    padding: 1rem 3rem;
+    max-width: 60rem;
+    margin: 6rem auto 0rem auto;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
     display: flex;
 }
 
-.main > div > div {
+.bold {
     font-weight: 500;
 }
 
@@ -35,7 +35,7 @@
 
 @media (max-width: 43em) {
     .main {
-        max-width: 52rem;
+        width: 88%;
         padding: 1rem 2rem;
     }
     .main > button {
@@ -43,14 +43,20 @@
     }
 }
 
+@media (max-width: 39em) {
+    .main {
+        flex-direction: column;
+    }
+    .main > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 32em) {
     .main {
-        max-width: 56rem;
+        width: 84%;
         padding: 1rem 2rem;
-    }
-    .main > button {
-        padding: 6x 6px;
-        font-size: 2rem;
     }
 }
 

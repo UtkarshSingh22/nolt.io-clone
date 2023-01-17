@@ -3,6 +3,8 @@ import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
 
 const Carousel = () => {
+
+    //function for handling clicking on an image in Carousel
     const scaleImage = (image) => {
         const activeImage = document.querySelector(
             "#imageContainer img.active"

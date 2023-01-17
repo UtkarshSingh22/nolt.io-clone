@@ -10,9 +10,10 @@ const TrialPopup = () => {
         };
     }, []);
 
+    //function for adding class when we reach the usage element while scrolling
     const reveal = () => {
         let popup = document.querySelector("#reveal");
-        let usageDiv = document.querySelector('#usage')
+        let usageDiv = document.querySelector("#usage");
 
         let windowHeight = window.innerHeight;
         let revealTop = usageDiv.getBoundingClientRect().top;
@@ -28,7 +29,8 @@ const TrialPopup = () => {
     return (
         <div className={styles.main} id="reveal">
             <div>
-                <div>Try it free for 10 days&nbsp;</div> without a credit card
+                <div className={styles.bold}>Try it free for 10 days&nbsp;</div>
+                <div>without a credit card</div>
             </div>
             <button>Create a Nolt board</button>
         </div>
