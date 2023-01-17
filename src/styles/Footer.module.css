@@ -16,8 +16,8 @@
 }
 
 .wave{
-    min-width: 120rem;
-    min-height: 30rem;
+    width: 100vw;
+    height: 10rem;
 }
 
 @media (max-width: 32em){
