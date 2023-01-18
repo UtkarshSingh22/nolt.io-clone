@@ -105,6 +105,11 @@ code {
     transform: translateY(0);
 }
 
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 /* @media (max-width: 80em) { 1280px
     @media (max-width: 62em){ 992px
     @media (max-width: 57em){ 912px

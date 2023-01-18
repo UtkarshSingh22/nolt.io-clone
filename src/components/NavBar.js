@@ -48,11 +48,11 @@ const NavBar = () => {
                     src="https://cdnb.nolt.io/image/upload/caakwki03eugnntvx7wu/1628788100.png"
                     alt="nolt icon"
                 />
-                <div>Nolt</div>
+                <a href="/">Nolt</a>
             </div>
             <div className={styles.options}>
                 <div>Features</div>
-                <div>Pricing</div>
+                <a href="/pricing">Pricing</a>
                 <div>Help</div>
                 <div>Sign in</div>
                 <div className={styles.btn}>Create a Nolt board</div>
